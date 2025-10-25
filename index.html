@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test de IQ Gratis</title>
+  <title>Test de IQ Avanzado</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,122 +15,62 @@
       margin: 0;
       padding: 0;
     }
-    header {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      width: 100%;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    }
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #ff3c3c;
-    }
-    #quiz {
-      margin: 30px 0;
-      max-width: 500px;
-      width: 90%;
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255,60,60,0.5);
-    }
-    .question {
-      margin-bottom: 15px;
-      font-size: 1.2rem;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      background: #ff3c3c;
-      color: #fff;
-      font-size: 1rem;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #ff6b6b;
-    }
-    .score {
-      font-size: 1.5rem;
-      text-align: center;
-      margin-top: 20px;
-      color: #00ff99;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      width: 100%;
-      background: #222;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+    header { text-align:center; padding:20px; background:#222; width:100%; box-shadow:0 2px 5px rgba(0,0,0,0.5); }
+    h1 { margin:0; font-size:2rem; color:#ff3c3c; }
+    #quiz { margin:30px 0; max-width:600px; width:90%; background:#1a1a1a; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(255,60,60,0.5); }
+    .question { margin-bottom:15px; font-size:1.2rem; }
+    button { padding:10px 20px; margin:5px; border:none; border-radius:8px; cursor:pointer; background:#ff3c3c; color:#fff; font-size:1rem; transition:0.3s; }
+    button:hover { background:#ff6b6b; }
+    .score { font-size:1.5rem; text-align:center; margin-top:20px; color:#00ff99; }
   </style>
-  <!-- Espacio para Google AdSense -->
-  <!-- Reemplaza "ca-pub-XXXXXXXXXXXX" con tu ID de AdSense -->
+  <!-- AdSense -->
   <script data-ad-client="ca-pub-XXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-
 <header>
-  <h1>Test de IQ Gratis</h1>
+  <h1>Test de IQ Avanzado</h1>
 </header>
-
 <div id="quiz"></div>
 
-<footer>
-  © 2025 Test de IQ Gratis - Hecho con HTML, CSS y JS
-</footer>
-
 <script>
-  const questions = [
-    { q: "1. ¿Cuál sigue en la serie? 2, 4, 8, 16, ...", a: ["18", "24", "32", "64"], correct: 2 },
-    { q: "2. Si un tren va a 60 km/h y otro a 80 km/h, ¿quién llega primero si salen al mismo tiempo?", a: ["Depende", "El más rápido", "Ninguno", "No sé"], correct: 1 },
-    { q: "3. ¿Qué número completa la serie? 1, 1, 2, 3, 5, 8, ...", a: ["10", "11", "12", "13"], correct: 3 },
-    { q: "4. Si todos los gatos son animales y algunos animales son blancos, ¿algunos gatos son blancos?", a: ["Sí", "No", "No se puede saber", "Todos"], correct: 2 },
-    { q: "5. Encuentra la figura que no encaja: círculo, cuadrado, triángulo, manzana", a: ["Círculo", "Cuadrado", "Triángulo", "Manzana"], correct: 3 },
-    { q: "6. Si 3 lápices cuestan 15 €, ¿cuánto cuestan 7 lápices?", a: ["30 €", "35 €", "25 €", "40 €"], correct: 1 },
-    { q: "7. ¿Cuál palabra no pertenece al grupo? Perro, Gato, Ratón, Silla", a: ["Perro", "Gato", "Ratón", "Silla"], correct: 3 },
-    { q: "8. Encuentra el número que falta: 7, 14, 28, 56, ...", a: ["64", "112", "120", "100"], correct: 1 },
-    { q: "9. Si todos los cuadrados son rectángulos, ¿todos los rectángulos son cuadrados?", a: ["Sí", "No", "Algunos sí", "No se puede saber"], correct: 1 },
-    { q: "10. Si 5 máquinas tardan 5 minutos en producir 5 piezas, ¿cuánto tardarán 100 máquinas en producir 100 piezas?", a: ["5 min", "100 min", "50 min", "20 min"], correct: 0 }
-  ];
+const questions = [
+  { q:"1. Encuentra el número que falta: 3, 9, 27, 81, ...", a:["162","243","324","405"], correct:1 },
+  { q:"2. Si todos los A son B y algunos B son C, ¿todos los A son C?", a:["Sí","No","Depende","No se puede saber"], correct:3 },
+  { q:"3. ¿Cuál de estos no pertenece? 2,3,5,7,9", a:["2","5","7","9"], correct:3 },
+  { q:"4. Completa la serie: AZ, BY, CX, DW, ...", a:["EV","EX","EY","DZ"], correct:0 },
+  { q:"5. Si el reloj marca 3:15, ¿qué ángulo forman las manecillas?", a:["0°","7.5°","15°","30°"], correct:1 },
+  { q:"6. Encuentra la palabra que no encaja: Martillo, Clavo, Sierra, Lápiz", a:["Martillo","Clavo","Sierra","Lápiz"], correct:3 },
+  { q:"7. 5 máquinas hacen 5 piezas en 5 minutos. ¿Cuánto tardarán 100 máquinas en hacer 100 piezas?", a:["5 min","100 min","50 min","20 min"], correct:0 },
+  { q:"8. Encuentra el número: 2, 6, 12, 20, 30, ...", a:["36","40","42","50"], correct:2 },
+  { q:"9. Si cada lado de un triángulo aumenta 50%, ¿cuánto aumenta el área aproximadamente?", a:["50%","100%","125%","225%"], correct:2 },
+  { q:"10. Encuentra la figura que no encaja: círculo, triángulo, pentágono, hexágono, manzana", a:["Círculo","Pentágono","Hexágono","Manzana"], correct:3 }
+];
 
-  let index = 0;
-  let score = 0;
-  const quiz = document.getElementById("quiz");
+let index=0, score=0;
+const quiz = document.getElementById("quiz");
 
-  function showQuestion() {
-    const q = questions[index];
-    quiz.innerHTML = `<div class='question'>${q.q}</div>` +
-      q.a.map((x,i)=>`<button onclick='check(${i})'>${x}</button>`).join("<br>");
+function showQuestion(){
+  const q=questions[index];
+  quiz.innerHTML=`<div class='question'>${q.q}</div>`+
+    q.a.map((x,i)=>`<button onclick='check(${i})'>${x}</button>`).join("<br>");
+}
+
+function check(i){
+  if(i===questions[index].correct) score++;
+  index++;
+  if(index<questions.length){ showQuestion(); }
+  else {
+    quiz.innerHTML=`<div class="score">¡Tu puntuación es ${score} de ${questions.length}!</div>
+      <div style="text-align:center;margin-top:20px;">
+        <button onclick="restart()">Volver a intentarlo</button>
+      </div>`;
   }
+}
 
-  function check(i) {
-    if (i === questions[index].correct) score++;
-    index++;
-    if (index < questions.length) {
-      showQuestion();
-    } else {
-      quiz.innerHTML = `<div class="score">¡Tu puntuación es ${score} de ${questions.length}!</div>` +
-        `<div style="text-align:center;margin-top:20px;">
-           <button onclick="restart()">Volver a intentarlo</button>
-         </div>`;
-    }
-  }
+function restart(){ index=0; score=0; showQuestion(); }
 
-  function restart() {
-    index = 0;
-    score = 0;
-    showQuestion();
-  }
-
-  showQuestion();
+showQuestion();
 </script>
-
 </body>
 </html>
+
